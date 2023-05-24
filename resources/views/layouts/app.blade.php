@@ -19,7 +19,7 @@
     <!-- Header -->
     @include('partials.header')
     <!-- Main -->
-    <main class="bg-light">
+    <main class="py-5">
         @yield('content')
     </main>
     <!-- Footer -->

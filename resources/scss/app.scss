@@ -1,3 +1,25 @@
 @use 'partials/variables' as *;
 @import '~bootstrap/scss/bootstrap';
+/* Header */
+header {
+    background-color: $darker;
+    h1 {
+        background-color: $green;
+        display: inline;
+        letter-spacing: 2px;
+    }
+}
 
+/* Main */
+main {
+    background-color: $dark;
+}
+
+/* Footer */
+footer {
+    background-color: $green;
+
+    small {
+        color:$dark;
+    }
+}
