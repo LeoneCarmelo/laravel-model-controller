@@ -6,12 +6,17 @@
             <!-- Print movies  -->
             @forelse ($movies as $movie)
             <div class="col">
-                <div class="card p-2">
-                    <div class="card-title">Title: {{ $movie->title }}</div>
-                    <div class="card-subtitle">Original Title: {{ $movie->original_title }}</div>
-                    <div class="nationality">Nationality: {{ $movie->nationality }}</div>
-                    <div class="nationality">Release Date: {{ $movie->date }}</div>
-                    <div class="vote">Vote: {{ $movie->vote }}</div>
+                <div class="card p-1">
+                    <div class="card-img-top">
+                        <img src="{{$movie->image}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">Title: <span>{{ $movie->title }}</span></div>
+                        <div class="card-subtitle">Original Title: <span>{{ $movie->original_title }}</span></div>
+                        <div class="nationality">Nationality: <span>{{ $movie->nationality }}</span></div>
+                        <div class="nationality">Release Date: <span>{{ $movie->date }}</span></div>
+                        <div class="vote">Vote: <span>{{ $movie->vote }}</span></div>
+                    </div>
                 </div>
             </div>               
             @empty

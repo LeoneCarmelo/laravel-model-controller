@@ -13,13 +13,29 @@ header {
 /* Main */
 main {
     background-color: $dark;
+
+    .card {
+        background-color: $green;
+    }
+
+    .card-body {
+        background-color: $dark;
+
+        div {
+            color:$green
+        }
+
+        span {
+            color:white;
+        }
+    }
 }
 
 /* Footer */
 footer {
-    background-color: $green;
+    background-color: $darker;
 
     small {
-        color:$dark;
+        color:$green;
     }
 }
